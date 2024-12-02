@@ -172,3 +172,47 @@ footer a:hover {
         font-size: 1.5rem;
     }
 }
+#resumePreview {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#resumePreview img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+#resumePreview h2, #resumePreview h3 {
+    text-align: center;
+    color: #333;
+}
+
+#resumePreview p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+#downloadPdfBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#downloadPdfBtn:hover {
+    background-color: #0056b3;
+}
