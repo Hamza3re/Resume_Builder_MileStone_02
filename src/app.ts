@@ -1,6 +1,3 @@
-// src/app.ts
-
-// Interface to define resume data structure
 interface ResumeData {
   name: string;
   title: string;
@@ -13,7 +10,6 @@ interface ResumeData {
   profilePicture?: File;
 }
 
-// Function to fetch form data
 function getFormData(): ResumeData {
   const name = (document.getElementById("name") as HTMLInputElement).value;
   const title = (document.getElementById("title") as HTMLInputElement).value;
@@ -28,7 +24,6 @@ function getFormData(): ResumeData {
   return { name, title, workExperience, academics, objective, skills, projects, achievements, profilePicture };
 }
 
-// Function to display resume preview
 function previewResume() {
   const data = getFormData();
 
@@ -56,5 +51,4 @@ function previewResume() {
   document.body.appendChild(previewSection);
 }
 
-// Attach event listener
 document.getElementById("previewBtn")?.addEventListener("click", previewResume);
